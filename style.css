@@ -1,0 +1,58 @@
+﻿body {
+    
+    background-color: #FFFFFF;
+    margin: 0 20px 0 20px;
+}
+
+/*Régle pour la navigation avec logo*/
+nav {
+    font-family: Raleway;
+    font-size: 16px;
+}
+
+#logo {
+    float: left;
+    margin: 15px;
+}
+
+ul {
+    margin: 0;
+    padding: 0;
+}
+
+    ul li {
+        list-style-type: none;
+        float: right;
+    }
+
+        ul li a {
+            color: black;
+            display: block;
+            padding: 0 20px 0 20px;
+            text-decoration: none;
+            line-height: 100px;
+            height: 100%;
+            font-weight: 500;
+        }
+
+            ul li a:hover {
+                height: 2px;
+                padding: 0 20px 0 20px;
+                background-color: #0065FC;
+                color: #0065FC;
+                line-height: 100px;
+            }
+
+            ul li a.selected {
+                height: 2px;
+                background-color: #0065FC;
+                color: #0065FC;
+                list-style-type: none;
+            }
+
+            ul li a#inscription {
+                color: #0065FC;
+                
+                font-weight: bold;
+                list-style-type: none;
+            }
