@@ -4,20 +4,69 @@
 <head>
     <meta charset="utf-8" />
     <link rel="stylesheet" href="style.css" />
+    <!--Regular 400 et Bold 700-->
     <link rel="preconnect" href="https://fonts.gstatic.com">
-    <link href="https://fonts.googleapis.com/css2?family=Raleway&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@500;600;700&display=swap" rel="stylesheet">
     <title>Réservia</title>
 </head>
 <body>
-    <!--Debut de navigation avec logo Reservia-->
-    <nav>
-        <a href="#"><img src="images/logo/Reservia.svg" id="logo" /></a>
-        <ul>
-            <li><a href="#" id="inscription">S'inscrire</a></li>
-            <li><a href="#">Activités</a></li>
-            <li><a href="./index.html" class="selected">Hébergements</a></li>
-        </ul>
-    </nav>
+    <!--Debut de navigation avec logo Reservia (TOUT EN HEADER)-->
+    <header>
+        <nav>
+            <a href="#"><img src="images/logo/Reservia.svg" id="logo" /></a>
+            <ul>
+                <li><a href="#" id="inscription">S'inscrire</a></li>
+                <li><a href="#">Activités</a></li>
+                <li><a href="./index.html#" class="selected">Hébergements</a></li>
+            </ul>
+        </nav>
+    </header>
     <!--Fin de navigation avec logo Reservia-->
+
+    <!--Partie avec filtre et recherche-->
+    <section class="sousheader">
+        <h1 class="titre">
+            Trouvez votre hébergement pour des vacances rêve
+        </h1>
+        <span class="sousheader">En plaine centre ville ou plein nature</span>
+        <aside class="sousheader">
+            <input id="in_recherche" type="search" placeholder="Écrivez ville souhaitée" /><button id="b_recherche">Rechercher</button>
+        </aside>
+        <div class="sousheader">
+            <aside id="chois_filtre">
+                <span class="mot_filtre">Filtre</span>
+                <span class="filtres">Économique</span>
+                <span class="filtres">Familial</span>
+                <span class="filtres">Romantique</span>
+                <span class="filtres">Animaux autorisés</span>
+            </aside>
+        </div>
+        <div class="sousheader">O Plus de 500 logement sont disponible dans cette ville</div>
+    </section>
+    <!--Partie avec filtre et recherche-->
+
+<!--hebergement gauche ville - droit populaires-->
+<section id="hebergement">
+    <!--Ville-->
+    <aside id="ville">
+        <h1 class="titre">Hébergements à Marseille</h1>
+        <br />
+        <br />
+        <br />
+        <br />
+        <br />
+    </aside>
+    <!--Populaires-->
+    <aside id="populaires">
+        <h1 class="titre">Les plus populaires</h1>
+        <br />
+        <br />
+        <br />
+        <br />
+        <br />
+    </aside>
+</section>
+
+
 </body>
 </html>

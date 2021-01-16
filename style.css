@@ -1,13 +1,21 @@
-﻿body {
-    
+﻿/*
+    Taille du text sur la page 14px, 16px, 18px et épaisseur 500, 600, 700
+    fond gris #F2F2F2 
+    chart blues #0065FC - plus claire #DEEBFF
+*/
+body {
     background-color: #FFFFFF;
-    margin: 0 20px 0 20px;
+    margin: 0 20px;
+    font-family: 'Raleway', sans-serif;
 }
 
 /*Régle pour la navigation avec logo*/
-nav {
-    font-family: Raleway;
+header {
     font-size: 16px;
+    height: 75px;
+}
+
+nav {
 }
 
 #logo {
@@ -18,11 +26,12 @@ nav {
 ul {
     margin: 0;
     padding: 0;
+    list-style-type: none;
 }
 
     ul li {
-        list-style-type: none;
         float: right;
+        height: 75px;
     }
 
         ul li a {
@@ -30,14 +39,14 @@ ul {
             display: block;
             padding: 0 20px 0 20px;
             text-decoration: none;
+            height: 75px;
             line-height: 100px;
-            height: 100%;
             font-weight: 500;
         }
 
             ul li a:hover {
                 height: 2px;
-                padding: 0 20px 0 20px;
+                padding: 0 20px;
                 background-color: #0065FC;
                 color: #0065FC;
                 line-height: 100px;
@@ -47,12 +56,107 @@ ul {
                 height: 2px;
                 background-color: #0065FC;
                 color: #0065FC;
-                list-style-type: none;
             }
 
             ul li a#inscription {
                 color: #0065FC;
-                
-                font-weight: bold;
-                list-style-type: none;
+                font-weight: 700;
             }
+
+
+/*Section Sous Header*/
+.sousheader { /*Section entier Sous Header*/
+    font-size: 14px;
+    font-weight: 500;
+    width: 55%;
+    margin: 10px 0 15px;
+}
+
+#in_recherche { /*input pour la recherche de la ville*/
+    color: black;
+    border: 1px solid #F2F2F2;
+    vertical-align: middle;
+    padding: 15px;
+    width: 70%;
+    outline: none;
+    font-family: Raleway;
+    font-size: 14px;
+}
+
+input[type="search"]::-webkit-input-placeholder { /*pour Chrome et Safari (text in input)*/
+    color: black;
+}
+input::-moz-placeholder { /*pour Firefox (text in input)*/
+    color: black;
+}
+
+#b_recherche {
+    background: #0065FC;
+    padding: 15px 2px;
+    outline: none;
+    border: 1px solid #0065FC;
+    border-top-right-radius: 15px;
+    border-bottom-right-radius: 15px;
+    font-family: Raleway;
+    font-size: 14px;
+    font: 700;
+    color: white;
+    width: 30%;
+}
+
+.titre { /*pour le titre de section*/
+    font-size: 18px;
+    font-weight: 700;
+    margin: 10px 0;
+}
+
+#chois_filtre { /*Chois de la filtre*/
+    font-size: 16px;
+    display: inline-block;
+    margin: 25px 0;
+    width: 300%;
+}
+
+.mot_filtre {
+    text-align: center;
+    padding-right: 10px;
+}
+
+.filtres { /*Disigne pour chaque filtre*/
+    border: 2px solid #F2F2F2;
+    border-radius: 25px 25px;
+    text-align: center;
+    padding: 10px 3%;
+    margin-left: 20px;
+    width: 20px;
+}
+
+#hebergement {
+    
+    display: inline-block;
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+#ville {
+    border-radius: 20px 20px;
+    margin: 1% 1% 1% 0;
+    padding: 2%;
+    display: inline-block;
+    width: 60%;
+    background-color: #F2F2F2;
+    height: 100%;
+}
+
+#populaires {
+    border-radius: 20px 20px;
+    float: right;
+    margin: 1% 0 1% 1%;
+    padding: 2%;
+    display: inline-block;
+    width: 30%;
+    background-color: #F2F2F2;
+    height: 100%;
+}
