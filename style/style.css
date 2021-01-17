@@ -5,7 +5,6 @@
 */
 body {
     background-color: #FFFFFF;
-    margin: 0 20px;
     font-family: 'Raleway', sans-serif;
 }
 
@@ -13,6 +12,7 @@ body {
 header {
     font-size: 16px;
     height: 75px;
+    margin: 0 20px;
 }
 
 nav {
@@ -70,18 +70,35 @@ ul {
     margin: 10px 0 15px;
 }
 
+span.sousheader { /*Section entier Sous Header*/
+    font-size: 14px;
+    font-weight: 500;
+    width: 100%;
+    margin: 10px 0px 15px 20px;
+}
+
+div.sousheader { /*Section entier Sous Header*/
+    margin: 0 20px;
+}
+
+.search {
+    margin: 0 20px;
+}
+
 #in_recherche { /*input pour la recherche de la ville*/
     color: black;
     border: 1px solid #F2F2F2;
     vertical-align: middle;
     padding: 15px;
-    width: 25%;
+    width: 20%;
+    max-width: 300px;
     outline: none;
     font-family: Raleway;
     font-size: 14px;
+    
 }
 
-input[type="search"]::-webkit-input-placeholder { /*pour Chrome et Safari (text in input)*/
+input::-webkit-input-placeholder { /*pour Chrome et Safari (text in input)*/
     color: black;
 }
 
@@ -91,7 +108,7 @@ input::-moz-placeholder { /*pour Firefox (text in input)*/
 
 #b_recherche {
     background-color: #0065FC;
-    padding: 15px 2px;
+    padding: 15px 10px;
     outline: none;
     border: 1px solid;
     border-top-right-radius: 15px;
@@ -99,10 +116,18 @@ input::-moz-placeholder { /*pour Firefox (text in input)*/
     font-family: Raleway;
     font-size: 14px;
     color: white;
-   
+    cursor: pointer;
 }
 
 .titre { /*pour le titre de section*/
+    display: flex;
+    flex-wrap: wrap;
+    font-size: 18px;
+    font-weight: 700;
+    margin: 10px 20px;
+}
+
+h2.titre { /*pour le titre de section hebergement plus populaire activité*/
     display: flex;
     flex-wrap: wrap;
     font-size: 18px;
@@ -133,7 +158,7 @@ input::-moz-placeholder { /*pour Firefox (text in input)*/
 #hebergement {
     display: flex;
     padding: 0;
-    
+    margin: 0 20px;
 }
 
 
@@ -161,6 +186,7 @@ input::-moz-placeholder { /*pour Firefox (text in input)*/
     order: 1;
     flex-basis: 30%;
     margin: 0 0 3% 0;
+    box-shadow: 0 0 10px #808080; /*ombre pour les hebergement */
 }
 
 #populaires {
@@ -171,7 +197,7 @@ input::-moz-placeholder { /*pour Firefox (text in input)*/
     order: 2;
     flex: 1;
     background-color: #F2F2F2;
-    flex-direction:column;
+    flex-direction: column;
 }
 
 .total_pop {
@@ -183,6 +209,7 @@ input::-moz-placeholder { /*pour Firefox (text in input)*/
     background-color: red;
     flex: 1;
     margin: 0 0 5% 0;
+    box-shadow: 0 0 10px #808080; /*ombre pour les plus populaires */
 }
 
 #activite {
@@ -190,12 +217,14 @@ input::-moz-placeholder { /*pour Firefox (text in input)*/
     display: flex;
     flex-direction: column;
     height: 200px;
+    margin: 0 20px;
 }
 
 .total_act {
     display: flex;
     justify-content: space-between;
     flex-basis: 100%;
+
 }
 
 .range {

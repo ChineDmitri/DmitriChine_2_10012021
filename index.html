@@ -30,7 +30,9 @@
         </h1>
         <span class="sousheader">En plaine centre ville ou plein nature</span>
         <aside class="sousheader">
-            <input id="in_recherche" type="search" placeholder="Écrivez ville souhaitée" /><button id="b_recherche">Rechercher</button>
+            <form class="search" method="post" action="searche.php">
+                <input id="in_recherche" type="text" name="ville_search" placeholder="Écrivez ville souhaitée" /><button id="b_recherche">Rechercher</button>
+            </form>
         </aside>
         <div class="sousheader">
             <aside id="chois_filtre">
@@ -52,7 +54,7 @@
             <h2 class="titre">Hébergements à Marseille</h2>
             <div class="total_heb">
                 <article class="heb"><br /><br /><br /><br /></article>
-                <article class="heb"><br /><br /><br /></article>
+                <article class="heb"><br /></article>
                 <article class="heb"><br /></article>
             </div>
             <div class="total_heb">
