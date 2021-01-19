@@ -1,0 +1,117 @@
+﻿
+<!DOCTYPE html>
+<html>
+<head>
+    <style>
+        div {
+            display: flex;
+            width: 400px;
+            line-height: 350px;
+            justify-content: space-between;
+        }
+
+        .f1 {
+            display: flex;
+            order:2;
+        }
+
+        .f2 {
+            display: flex;
+            order:1;
+        }
+
+        .select {
+            display: flex;
+            position: relative;
+            width: 150px;
+            height: 50px;
+        }
+
+            .select input {
+                display: none;
+            }
+
+        .triger {
+            position: absolute;
+            text-align: center;
+            line-height: 50px;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background-color: white;
+            -webkit-transition: .4s;
+            transition: .4s;
+        }
+
+            .triger:before {
+                position: absolute;
+                content: "";
+                background-image: url(ico.png);
+                background-position: 50%;
+                background-repeat: no-repeat;
+                background-size: 20px;
+                object-fit: cover;
+                height: 50px;
+                width: 50px;
+                left: -3px;
+                bottom: -2px;
+                background-color: #DEEBFF;
+                transition: 1s;
+            }
+
+        input:checked + .triger {
+            background-color: #0065FC;
+            color: #0065FC;
+            text-align: center;
+            line-height: 50px;
+        }
+
+
+            input:checked + .triger:before {
+                transform: translateX(102px);
+            }
+
+        /* Rounded sliders */
+        .triger {
+            border-radius: 25px;
+            border: 2px solid #f2f2f2;
+        }
+
+            .triger:before {
+                border-radius: 100%;
+            }
+    </style>
+</head>
+<body>
+
+    <!--
+        <label class="selec">
+            <input type="checkbox">
+            <span class="slider"></span>
+        </label>
+
+        <label class="switch">
+            <input type="checkbox" checked>
+            <span class="slider"></span>
+        </label><br><br>
+    -->
+    <div>
+        <div class="f1">
+            <label class="select">
+                <input type="checkbox">
+                <span class="triger">Filtre</span>
+            </label>
+        </div>
+        <div class="f2">
+            <label class="select">
+                <input type="checkbox" checked>
+                <span class="triger">Filtre</span>
+            </label>
+        </div>
+    </div>
+</body>
+</html>
+
+
+
