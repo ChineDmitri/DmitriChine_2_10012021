@@ -5,93 +5,135 @@
     <meta charset="utf-8" />
     <link rel="stylesheet" href="style/style.css" />
     <!--Regular 400 et Bold 700-->
+    <script src="https://kit.fontawesome.com/f758d5de88.js" crossorigin="anonymous"></script>
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@500;600;700&display=swap" rel="stylesheet">
     <title>Réservia</title>
 </head>
 <body>
-    <!--Debut de navigation avec logo Reservia (TOUT EN HEADER)-->
-    <header>
-        <nav>
-            <a href="#"><img src="images/logo/Reservia.svg" id="logo" /></a>
-            <ul>
-                <li><a href="#" id="inscription">S'inscrire</a></li>
-                <li><a href="#">Activités</a></li>
-                <li><a href="./index.html#" id="selected">Hébergements</a></li>
-            </ul>
-        </nav>
-    </header>
-    <!--Fin de navigation avec logo Reservia-->
-
-    <!--Partie avec filtre et recherche-->
-    <section class="sousheader">
-        <h1 class="titre">
-            Trouvez votre hébergement pour des vacances rêve
-        </h1>
-        <span class="sousheader">En plaine centre ville ou plein nature</span>
-        <aside class="sousheader">
-            <form class="search" method="post" action="searche.php">
-                <input id="in_recherche" type="text" name="ville_search" placeholder="Écrivez ville souhaitée" /><button id="b_recherche">Rechercher</button>
-            </form>
-        </aside>
-        <div class="sousheader">
-            <aside id="chois_filtre">
-                <span class="mot_filtre">Filtre</span>
-                <span class="filtres">Économique</span>
-                <span class="filtres">Familial</span>
-                <span class="filtres">Romantique</span>
-                <span class="filtres">Animaux autorisés</span>
+    <div class="corps">
+        <!--Debut de navigation avec logo Reservia (TOUT EN HEADER)-->
+        <header>
+            <nav>
+                <a href="#"><img src="images/logo/Reservia.svg" id="logo" /></a>
+                <ul>
+                    <li><a href="#" id="inscription">S'inscrire</a></li>
+                    <li><a href="#">Activités</a></li>
+                    <li><a href="./index.html#" id="selected">Hébergements</a></li>
+                </ul>
+            </nav>
+        </header>
+        <!--Fin de navigation avec logo Reservia-->
+        <!--Partie avec filtre et recherche-->
+        <section class="sousheader">
+            <h1 class="titre">
+                Trouvez votre hébergement pour des vacances rêve
+            </h1>
+            <span class="sousheader">En plaine centre ville ou plein nature</span>
+            <aside class="sousheader">
+                <form class="search" method="post" action="searche.php">
+                    <input id="in_recherche" type="text" name="ville_search" placeholder="Écrivez ville souhaitée" /><button id="b_recherche">Rechercher</button>
+                </form>
             </aside>
-        </div>
-        <div class="sousheader">O Plus de 500 logement sont disponible dans cette ville</div>
-    </section>
-    <!--Partie avec filtre et recherche-->
-
-<!--hebergement gauche ville - droit populaires-->
-    <div id="hebergement">
-        <!--Ville-->
-        <section id="ville">
-            <h2 class="titre">Hébergements à Marseille</h2>
-            <div class="total_heb">
-                <article class="heb"><br /><br /><br /><br /></article>
-                <article class="heb"><br /></article>
-                <article class="heb"><br /></article>
+            <div class="sousheader">
+                <aside id="chois_filtre">
+                    <span class="mot_filtre">Filtre</span>
+                    <span class="filtres">Économique</span>
+                    <span class="filtres">Familial</span>
+                    <span class="filtres">Romantique</span>
+                    <span class="filtres">Animaux autorisés</span>
+                </aside>
             </div>
-            <div class="total_heb">
-                <article class="heb"><br /></article>
-                <article class="heb"><br /></article>
-                <article class="heb"><br /></article>
-            </div>
+            <div class="sousheader"> img O Plus de 500 logement sont disponible dans cette ville</div>
         </section>
-        <!--Populaires-->
-        <section id="populaires">
-            <h2 class="titre">Les plus populaires</h2>
-            <div class="total_pop">
-                <article class="pop"><br /></article>
-                <article class="pop"><br /></article>
-                <article class="pop"><br /></article>
+        <!--Partie avec filtre et recherche-->
+        <!--hebergement gauche ville - droit populaires-->
+        <div id="hebergement">
+            <!--Ville-->
+            <section id="ville">
+                <h2 class="titre">Hébergements à Marseille</h2>
+                <div class="total_heb">
+                    <article class="heb1"><!--1ème hebergement-->
+                        <img class="hebimg" src="./images/hebergements/4_small/marcus-loke-WQJvWU_HZFo-unsplash.jpg" />
+                        <div class="discription_heb">
+                            <b class="titre"><a href="#" class="heblink">Aubegre La Cannebière</a></b>
+                            <span class="prix">Nuit a partire de&nbsp;<b>25€</b></span>
+                            <div class="stars"><i class="fas fa-star"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i></i><i class="fas fa-star-black"></i></div>
+                        </div> 
+                    </article>
+                    <article class="heb2"><!--2ème hebergement-->
+                        <img class="hebimg" src="./images/hebergements/4_small/marcus-loke-WQJvWU_HZFo-unsplash.jpg" />
+                        <div class="discription_heb">
+                            <b class="titre"><a href="#" class="heblink">Hôtel du port</a></b>
+                            <span class="prix">Nuit a partire 52€</span>
+                            <div class="stars"><i class="fas fa-star"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i></i><i class="fas fa-star-black"></i></div>
+                        </div>
+                    </article>
+                    <article class="heb3"><!--3ème hebergement-->
+                        <img class="hebimg" src="./images/hebergements/4_small/marcus-loke-WQJvWU_HZFo-unsplash.jpg" />
+                        <div class="discription_heb">
+                            <b class="titre"><a href="#" class="heblink">Hôtel Les mouettes</a></b>
+                            <span class="prix">Nuit a partire de 76€</span>
+                            <div class="stars"><i class="fas fa-star"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i></i><i class="fas fa-star-black"></i></div>
+                        </div>
+                    </article>
+                </div>
+                <div class="total_heb">
+                    <article class="heb4">
+                        <img class="hebimg" src="./images/hebergements/4_small/marcus-loke-WQJvWU_HZFo-unsplash.jpg" />
+                        <div class="discription_heb">
+                            <b class="titre"><a href="#" class="heblink">Hôtel de la mer</a></b>
+                            <span class="prix">Nuit a partire de 46€</span>
+                            <div class="stars"><i class="fas fa-star"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i></i><i class="fas fa-star-black"></i></div>
+                        </div>
+                    </article>
+                    <article class="heb5">
+                        <img class="hebimg" src="./images/hebergements/4_small/marcus-loke-WQJvWU_HZFo-unsplash.jpg" />
+                        <div class="discription_heb">
+                            <b class="titre"><a href="#" class="heblink">Aubegre La Panier</a></b>
+                            <span class="prix">Nuit a partire de&nbsp;<b>23€</b></span>
+                            <div class="stars"><i class="fas fa-star"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i></i><i class="fas fa-star-black"></i></div>
+                        </div>
+                    </article>
+                    <article class="heb6">
+                        <img class="hebimg" src="./images/hebergements/4_small/marcus-loke-WQJvWU_HZFo-unsplash.jpg" />
+                        <div class="discription_heb">
+                            <b class="titre"><a href="#" class="heblink">Hôtel chez Amina</a></b>
+                            <span class="prix">Nuit a partire de 96€</span>
+                            <div class="stars"><i class="fas fa-star"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i></i><i class="fas fa-star-black"></i></div>
+                        </div>
+                    </article>
+                </div>
+            </section>
+            <!--Populaires-->
+            <section id="populaires">
+                <h2 class="titre">Les plus populaires</h2>
+                <div class="total_pop">
+                    <article class="pop"><br /></article>
+                    <article class="pop"><br /></article>
+                    <article class="pop"><br /></article>
+                </div>
+            </section>
+        </div>
+
+        <!--activite au ville -->
+        <section id="activite">
+            <h2 class="titre">Acivité au Marseille</h2>
+            <div class="total_act">
+                <div class="range">
+
+                </div>
+                <div class="range">
+
+                </div>
+                <div class="range">
+
+                </div>
+                <div class="range">
+
+                </div>
             </div>
         </section>
     </div>
- 
-    <!--activite au ville -->
-    <section id="activite">
-        <h2 class="titre">Acivité au Marseille</h2>
-        <div class="total_act">
-            <div class="range">
-
-            </div>
-            <div class="range">
-
-            </div>
-            <div class="range">
-
-            </div>
-            <div class="range">
-
-            </div>
-        </div>
-    </section>
-
 </body>
 </html>
