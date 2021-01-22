@@ -100,14 +100,6 @@ div.sousheader { /*les Filtres*/
     font-size: 14px;
 }
 
-input::-webkit-input-placeholder { /*pour Chrome et Safari (text in input)*/
-    color: black;
-}
-
-input::-moz-placeholder { /*pour Firefox (text in input)*/
-    color: black;
-}
-
 #b_recherche {
     background-color: #0065FC;
     padding: 15px 10px;
@@ -141,7 +133,7 @@ b.titre { /*pour les articles*/
     display: flex;
     order: 1;
     flex-wrap: wrap;
-    font-size: 16px;
+    font-size: 14px;
     font-weight: 700;
     order: 0;
     margin: 0 0 2% 0;
@@ -149,18 +141,62 @@ b.titre { /*pour les articles*/
 
 .hebimg {
     width: 100%;
-    height: 55%;
+    height: 60%;
     object-fit: cover;
     border-top-left-radius: 12px;
     border-top-right-radius: 12px;
 }
 
-.discription_heb {
+.actimg_grande {
+    width: 100%;
+    height: 330px;
+    object-fit: cover;
+    padding-bottom: 2%;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+}
+
+.actimg_plusquemoyen {
+    width: 100%;
+    height: 150px;
+    object-fit: cover;
+    padding-bottom: 2%;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+}
+
+.actimg_moyen {
+    width: 100%;
+    height: 125px;
+    object-fit: cover;
+    padding-bottom: 2%;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+}
+
+.actimg_petit {
+    width: 100%;
+    height: 100px;
+    object-fit: cover;
+    padding-bottom: 2%;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+}
+
+.discription {
     display: flex;
     flex-wrap: wrap;
     flex-direction: column;
     justify-content: space-around;
-    padding: 2% 5px;
+    font-size: 14px;
+}
+
+.article_heb {
+    padding: 5px 10px;
+}
+
+.article_act {
+    padding: 10px 15px;
 }
 
 .prix {
@@ -180,6 +216,10 @@ b.titre { /*pour les articles*/
 
 .fa-star {
     color: #0065FC;
+}
+
+.no_color {
+    color: #D9D9D9;
 }
 
 
@@ -324,21 +364,74 @@ b.titre { /*pour les articles*/
     margin: 2% 0;
     display: flex;
     flex-direction: column;
-    height: 200px;
 }
 
 .total_act {
     display: flex;
+    flex-direction: row;
+    justify-content: space-between; 
+}
+
+.range1, .range2, .range3, .range4 {
+    display: flex;
+    flex-direction: column;
     justify-content: space-between;
-    flex-basis: 100%;
-}
-
-.range {
-    order: 1;
     flex-basis: 23%;
-    background-color: black;
 }
 
+.range1 {
+    order: 1;
+}
+
+.range2 {
+    order: 2;
+}
+
+.range3 {
+    order: 3;
+}
+
+.range4 {
+    order: 4;
+}
+
+.act1, .act2, .act3, .act4, .act5, .act6 {
+    display: flex;
+    background-color: white;
+    box-shadow: 0 0 10px #808080;
+    border-radius: 20px;
+    flex-direction: column;
+    
+    flex-basis: 20%;
+}
+
+.act1 {
+    order: 1;
+}
+
+.act2 {
+    order: 2;
+
+}
+
+.act3 {
+    order: 3;
+
+}
+
+.act4 {
+    order: 4;
+}
+
+.act5 {
+    order: 5;
+    flex: 0;
+}
+
+.act6 {
+    order: 6;
+    flex: 0;
+}
 
 @media screen and (min-width: 1343px) {
     .corps {
