@@ -32,19 +32,35 @@
             <span class="sousheader">En plaine centre ville ou plein nature</span>
             <aside class="sousheader">
                 <form class="search" method="post" action="searche.php">
-                    <input id="in_recherche" type="text" name="ville_search" placeholder="Écrivez ville souhaitée" /><button id="b_recherche">Rechercher</button>
+                    <i class="fas fa-map-marker-alt"></i>
+                    <input id="in_recherche" type="text" name="ville_search" placeholder="Écrivez ville souhaitée" /><button id="b_recherche">Rechercher</button><div class="cache"><i class="fas fa-info cache"></i></div>
                 </form>
             </aside>
             <div class="sousheader">
                 <aside id="chois_filtre">
                     <span class="mot_filtre"><b>Filtre</b></span>
-                    <span class="filtres">Économique</span>
-                    <span class="filtres">Familial</span>
-                    <span class="filtres">Romantique</span>
-                    <span class="filtres">Animaux autorisés</span>
+                    <span class="filtres">
+                        <i class="fas fa-money-bill-wave"></i>
+                        Économique
+                    </span>
+                    <span class="filtres">
+                        <i class="fas fa-child"></i>
+                        Familial
+                    </span>
+                    <span class="filtres">
+                        <i class="fas fa-heart"></i>
+                        Romantique
+                    </span>
+                    <span class="filtres">
+                        <i class="fas fa-dog"></i>
+                        Animaux autorisés
+                    </span>
                 </aside>
             </div>
-            <div class="sousheader"> img O Plus de 500 logement sont disponible dans cette ville</div>
+            <div class="sousheader count">
+                <i class="fas fa-info"></i>
+                O Plus de 500 logement sont disponible dans cette ville
+            </div>
         </section>
         <!--Partie avec filtre et recherche-->
         <!--hebergement gauche ville - droit populaires-->
