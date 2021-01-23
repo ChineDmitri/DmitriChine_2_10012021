@@ -33,8 +33,8 @@
             <aside class="sousheader">
                 <form class="search" method="post" action="searche.php">
                     <i class="fas fa-map-marker-alt"></i>
-                    <input id="in_recherche" type="text" name="ville_search" placeholder="Écrivez ville souhaitée" /><button id="b_recherche">Rechercher</button><div class="cache"><i class="fas fa-info cache"></i></div>
-                </form>
+                    <input id="in_recherche" type="text" name="ville_search" placeholder="Écrivez ville souhaitée" /><button class="b_recherche ordi">Rechercher</button><button class="b_recherche mobil"><i class="fas fa-search"></i></button>
+</form>
             </aside>
             <div class="sousheader">
                 <aside id="chois_filtre">
@@ -67,15 +67,15 @@
         <div id="hebergement">
             <!--Ville-->
             <section id="ville">
-                <h2 class="titre">Hébergements à Marseille</h2>
+                <h2 class="titre local">Hébergements à Marseille</h2>
                 <div class="total_heb">
                     <article class="heb1">
                         <!--1ème hebergement-->
                         <img class="hebimg" src="./images/hebergements/4_small/marcus-loke-WQJvWU_HZFo-unsplash.jpg" />
                         <div class="discription article_heb">
-                            <b class="titre"><a href="#" class="heblink">Aubegre La Cannebière</a></b>
+                            <b class="titre appnom"><a href="#" class="heblink">Aubegre La Cannebière</a></b>
                             <span class="prix">Nuit a partire de&nbsp;<b>25€</b></span>
-                            <div class="stars">
+                            <div class="stars heb">
                                 <i class="fas fa-star"></i>
                                 <i class="fas fa-star"> </i>
                                 <i class="fas fa-star"></i>
@@ -88,9 +88,9 @@
                         <!--2ème hebergement-->
                         <img class="hebimg" src="./images/hebergements/4_small/fred-kleber-gTbaxaVLvsg-unsplash.jpg" />
                         <div class="discription article_heb">
-                            <b class="titre"><a href="#" class="heblink">Hôtel du port</a></b>
+                            <b class="titre appnom"><a href="#" class="heblink">Hôtel du port</a></b>
                             <span class="prix">Nuit a partire 52€</span>
-                            <div class="stars">
+                            <div class="stars heb">
                                 <i class="fas fa-star"></i>
                                 <i class="fas fa-star"> </i>
                                 <i class="fas fa-star"></i>
@@ -103,9 +103,9 @@
                         <!--3ème hebergement-->
                         <img class="hebimg" src="./images/hebergements/4_small/reisetopia-B8WIgxA_PFU-unsplash.jpg" />
                         <div class="discription article_heb">
-                            <b class="titre"><a href="#" class="heblink">Hôtel Les mouettes</a></b>
+                            <b class="titre appnom"><a href="#" class="heblink">Hôtel Les mouettes</a></b>
                             <span class="prix">Nuit a partire de 76€</span>
-                            <div class="stars">
+                            <div class="stars heb">
                                 <i class="fas fa-star"></i>
                                 <i class="fas fa-star"> </i>
                                 <i class="fas fa-star"></i>
@@ -120,9 +120,9 @@
                         <!--4ème hebergement-->
                         <img class="hebimg" src="./images/hebergements/4_small/annie-spratt-Eg1qcIitAuA-unsplash.jpg" />
                         <div class="discription article_heb">
-                            <b class="titre"><a href="#" class="heblink">Hôtel de la mer</a></b>
+                            <b class="titre appnom"><a href="#" class="heblink">Hôtel de la mer</a></b>
                             <span class="prix">Nuit a partire de 46€</span>
-                            <div class="stars">
+                            <div class="stars heb">
                                 <i class="fas fa-star"></i>
                                 <i class="fas fa-star"> </i>
                                 <i class="fas fa-star"></i>
@@ -135,9 +135,9 @@
                         <!--5ème hebergement-->
                         <img class="hebimg" src="./images/hebergements/4_small/nicate-lee-kT-ZyaiwBe0-unsplash.jpg" />
                         <div class="discription article_heb">
-                            <b class="titre"><a href="#" class="heblink">Aubegre La Panier</a></b>
+                            <b class="titre appnom"><a href="#" class="heblink">Aubegre La Panier</a></b>
                             <span class="prix">Nuit a partire de&nbsp;<b>23€</b></span>
-                            <div class="stars">
+                            <div class="stars heb">
                                 <i class="fas fa-star"></i>
                                 <i class="fas fa-star"> </i>
                                 <i class="fas fa-star"></i>
@@ -150,9 +150,9 @@
                         <!--6ème hebergement-->
                         <img class="hebimg" src="./images/hebergements/4_small/febrian-zakaria-M6S1WvfW68A-unsplash.jpg" />
                         <div class="discription article_heb">
-                            <b class="titre"><a href="#" class="heblink">Hôtel chez Amina</a></b>
+                            <b class="titre appnom"><a href="#" class="heblink">Hôtel chez Amina</a></b>
                             <span class="prix">Nuit a partire de 96€</span>
-                            <div class="stars">
+                            <div class="stars heb">
                                 <i class="fas fa-star"></i>
                                 <i class="fas fa-star"> </i>
                                 <i class="fas fa-star"></i>
@@ -160,16 +160,63 @@
                                 <i class="fas fa-star"></i>
                             </div>
                         </div>
+
                     </article>
                 </div>
+                <b class="titre aplus">Afficher plus</b>
             </section>
             <!--Populaires-->
             <section id="populaires">
                 <h2 class="titre">Les plus populaires</h2>
                 <div class="total_pop">
-                    <article class="pop"><br /></article>
-                    <article class="pop"><br /></article>
-                    <article class="pop"><br /></article>
+                    <article class="pop1">
+                        <img class="popimg"src="images/hebergements/4_small/emile-guillemot-Bj_rcSC5XfE-unsplash.jpg" />
+            
+                            <div class="discription article_pop">
+                                <b class="titre appnom"><a href="#" class="heblink">Hôtel Le soleil du matin</a></b>
+                                <span class="prix">Nuit a partire de 128€</span>
+                                <div class="stars pop">
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"> </i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                </div>
+                            </div>
+                            
+                    </article>
+                    <article class="pop2">
+                        <img class="popimg" src="images/hebergements/4_small/aw-creative-VGs8z60yT2c-unsplash.jpg" />
+
+                            <div class="discription article_pop">
+                                <b class="titre appnom"><a href="#" class="heblink">Au cœur de l'eau Chambre d'hôtes</a></b>
+                                <span class="prix">Nuit a partire de 71€</span>
+                                <div class="stars pop">
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"> </i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star no_color"></i>
+                                </div>
+
+                            </div>
+                    </article>
+                    <article class="pop3">
+                        <img class="popimg" src="images/hebergements/4_small/febrian-zakaria-sjvU0THccQA-unsplash.jpg" />
+                        
+                            <div class="discription article_pop">
+                                <b class="titre appnom"><a href="#" class="heblink">Hôtel tout bleu et Blanc</a></b>
+                                <span class="prix">Nuit a partire de 68€</span>
+                                <div class="stars pop">
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"> </i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star no_color"></i>
+                                </div>
+                            </div>
+                        
+                    </article>
                 </div>
             </section>
         </div>
@@ -213,5 +260,8 @@
             </div>
         </section>
     </div>
+    <footer>
+      
+    </footer>
 </body>
 </html>

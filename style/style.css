@@ -6,12 +6,19 @@
 body {
     background-color: #FFFFFF;
     font-family: 'Raleway', sans-serif;
-    margin: 0 20px;
+    margin: 0;
     align-content: center;
 }
 
-.corps {
-    margin: 0 10px;
+footer {
+    display: block;
+    background-color: #F2F2F2;
+    height: 250px;
+}
+
+div.corps {
+    display: block;
+    margin: 0 30px;
 }
 
 /*Régle pour la navigation avec logo*/
@@ -104,18 +111,30 @@ div.sousheader { /*les Filtres*/
     display:none;
 }
 
-#b_recherche {
-    display: inline-block;
+.b_recherche { 
     background-color: #0065FC;
-    padding: 15px 10px 17px;
     outline: none;
     border: 1px solid;
-    border-top-right-radius: 15px;
-    border-bottom-right-radius: 15px;
+ 
     font-family: Raleway;
     font-size: 14px;
     color: white;
     cursor: pointer;
+}
+
+.ordi {
+    display: inline-block;
+    border-top-right-radius: 15px;
+    border-bottom-right-radius: 15px;
+    padding: 15px 10px 17px;
+}
+
+.mobil {
+    display: none;
+    padding: 15px 20px 17px;
+    border-radius: 15px;
+    position: relative;
+    right: 10px;
 }
 
 .titre { /*pour le titre de section*/
@@ -136,12 +155,23 @@ h2.titre { /*pour le titre de section hebergement plus populaire activité*/
 
 b.titre { /*pour les articles*/
     display: flex;
-    order: 1;
     flex-wrap: wrap;
     font-size: 14px;
     font-weight: 700;
-    order: 0;
     margin: 0 0 2% 0;
+}
+
+.appnom {
+    order: 0;
+}
+
+.local {
+    order: 0;
+}
+
+.aplus {
+    order:2;
+    padding-top: 2%;
 }
 
 .hebimg {
@@ -151,6 +181,15 @@ b.titre { /*pour les articles*/
     border-top-left-radius: 12px;
     border-top-right-radius: 12px;
 }
+
+.popimg {
+    border-top-left-radius: 12px;
+    border-bottom-left-radius: 12px;
+    object-fit: cover;
+    height: 100%;
+    width: 33%;
+}
+
 
 .actimg_grande {
     width: 100%;
@@ -192,7 +231,7 @@ b.titre { /*pour les articles*/
     display: flex;
     flex-wrap: wrap;
     flex-direction: column;
-    justify-content: space-around;
+
     font-size: 14px;
 }
 
@@ -202,6 +241,13 @@ b.titre { /*pour les articles*/
 
 .article_act {
     padding: 10px 15px;
+    
+}
+
+.article_pop {
+    
+    height: 100%; /*comme image*/
+    margin: 10px 0 10px 10px;
 }
 
 .prix {
@@ -213,11 +259,22 @@ b.titre { /*pour les articles*/
     text-decoration: none;
 }
 
+/*BLOCK LES ETOILES*/
 .stars {
     display: flex;
     order: 2;
-    margin: 2% 0 0 0;
+    
 }
+
+.pop {
+    display: flex;
+    align-items: flex-end;
+    height: 40%;
+}
+.heb {
+    margin: 4% 0 0 0;
+}
+/*FIN BLOCK ETOILES*/
 
 /*ICONES*/
 .fa-star {
@@ -237,12 +294,12 @@ b.titre { /*pour les articles*/
     display: flex;
     color: #0065FC;
     font-size: 15px;
-    padding: 10px 10px;
+    padding: 10px 15px;
     margin-right: 5px;
     border: 1px solid #F2F2F2;
     border-radius: 50%;
     position:relative;
-    z-index: ;
+
 }
 
 
@@ -300,7 +357,7 @@ b.titre { /*pour les articles*/
     padding: 2%;
     display: flex;
     order: 1;
-    flex: 3;
+    flex: 5;
     flex-wrap: wrap;
     flex-direction: column;
     justify-content: space-between;
@@ -361,7 +418,7 @@ b.titre { /*pour les articles*/
     padding: 2%;
     display: flex;
     order: 2;
-    flex: 1;
+    flex: 2;
     background-color: #F2F2F2;
     flex-direction: column;
 }
@@ -369,14 +426,37 @@ b.titre { /*pour les articles*/
 .total_pop {
     display: flex;
     flex-direction: column;
+    justify-content: space-between;
+    height: 100%;
 }
 
-.pop {
-    background-color: red;
-    flex: 1;
-    margin: 0 0 5% 0;
+.pop1, .pop2, .pop3 {
+    display: flex;
+    background-color: white;
     box-shadow: 0 0 10px #808080; /*ombre pour les plus populaires */
+    height: 50px;
+    max-height: 27%;
+    border-radius:15px;
+    padding: 5px;
 }
+
+.pop1 {
+    flex: 1;
+    order: 1;
+    margin-bottom: 10%;
+}
+
+.pop2 {
+    flex: 1;
+    order: 2;
+    margin-bottom: 10%;
+}
+
+.pop3 {
+    flex: 1;
+    order: 3;
+}
+
 
 #activite {
     margin: 2% 0;
@@ -386,9 +466,11 @@ b.titre { /*pour les articles*/
 
 .total_act {
     display: flex;
+    display: flex;
     flex-direction: row;
     justify-content: space-between; 
 }
+
 
 .range1, .range2, .range3, .range4 {
     display: flex;
