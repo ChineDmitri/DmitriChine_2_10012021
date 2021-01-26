@@ -13,87 +13,91 @@ body {
 div.corps {
     margin: 0 20px;
     display: block;
-    
 }
 
 footer {
     display: block;
     background-color: #F2F2F2;
     font-size: 16px;
-    
 }
 
 /*Régle pour la navigation avec logo*/
 header {
-    font-size: 16px;
     height: 75px;
+    font-size: 3vh;
 }
 
-nav {
+
+
+.navigation {
+    display: flex;
+    justify-content:space-between;
+    width:100%;
+    
 }
 
-#logo {
+.logo {
     float: left;
     margin: 20px 0;
 }
 
-ul {
+.listing {
+    display:flex;
+    flex-wrap:wrap;
+    flex-direction: row-reverse;
     margin: 0;
     padding: 0;
     list-style-type: none;
 }
 
-    ul li {
-        float: right;
-        height: 75px;
-    }
+ul li {
+    float: right;
+    height: 75px;
+}
 
-        ul li a {
-            color: black;
-            display: block;
-            padding: 0 20px 0 20px;
-            text-decoration: none;
-            height: 75px;
-            line-height: 100px;
-            font-weight: 500;
-        }
+.point_list a {
+    color: black;
+    display: block;
+    padding: 0 20px 0 20px;
+    text-decoration: none;
+    height: 75px;
+    line-height: 100px;
+    font-weight: 500;
+}
 
-            ul li a:hover {
-                height: 2px;
-                padding: 0 20px;
-                background-color: #0065FC;
-                line-height: 100px;
-            }
+.point_list a:hover {
+    height: 2px;
+    padding: 0 20px;
+    background-color: #0065FC;
+    line-height: 100px;
+}
 
-            ul li a#selected {
-                height: 2px;
-                background-color: #0065FC;
-            }
+.point_list .selected {
+    height: 2px;
+    background-color: #0065FC;
+}
 
-            ul li a#inscription {
-                color: #0065FC;
-                font-weight: 700;
-            }
+.point_list .inscription {
+    color: #0065FC;
+    font-weight: 700;
+}
 
-            ul li a#activite_link {
-
-            }
+.point_list .activite_link {
+}
 
 #go_act {
-    
 }
 
 
 /*Section Sous Header*/
 .sousheader { /*Section entier Sous Header*/
-    font-size: 14px;
     font-weight: 500;
     width: 100%;
     margin: 10px 0 15px;
 }
 
 span.sousheader { /**/
-    font-size: 14px;
+    font-size: 2vh;
     font-weight: 500;
     width: 100%;
     margin: 10px 0px 15px 0;
@@ -102,53 +106,13 @@ span.sousheader { /**/
 div.sousheader { /*les Filtres*/
 }
 
-.search {
-}
 
-#in_recherche { /*input pour la recherche de la ville*/
-    color: black;
-    border: 1px solid #F2F2F2;
-    vertical-align: middle;
-    padding: 15px;
-    width: 20%;
-    max-width: 300px;
-    outline: none;
-    font-family: Raleway;
-    font-size: 14px;
-}
 
-.cache {
-    display: none;
-}
-
-.b_recherche {
-    background-color: #0065FC;
-    outline: none;
-    border: 1px solid;
-    font-family: Raleway;
-    font-size: 14px;
-    color: white;
-    cursor: pointer;
-}
-.ordi {
-    display: inline-block;
-    border-top-right-radius: 15px;
-    border-bottom-right-radius: 15px;
-    padding: 15px 10px 17px;
-}
-
-.mobil {
-    display: none;
-    padding: 15px 20px 17px;
-    border-radius: 15px;
-    position: relative;
-    right: 10px;
-}
 
 .titre { /*pour le titre de section*/
     display: flex;
     flex-wrap: wrap;
-    font-size: 18px;
+    font-size: 3vh;
     font-weight: 700;
     margin: 10px 0;
 }
@@ -159,7 +123,7 @@ h2.titre { /*pour le titre de section hebergement plus populaire activité*/
     font-size: 18px;
     font-weight: 700;
     margin: 10px 0 20px 0;
-   justify-content: space-between;
+    justify-content: space-between;
 }
 
 b.titre { /*pour les articles*/
@@ -289,7 +253,7 @@ b.titre { /*pour les articles*/
     height: 100%;
 }
 
-/*BLOCK LES ETOILES*/
+/*--------------------------------BLOCK LES ETOILES*/
 .stars {
     display: flex;
     order: 2;
@@ -301,7 +265,123 @@ b.titre { /*pour les articles*/
 .heb {
     margin: 4% 0 0 0;
 }
-/*FIN BLOCK ETOILES*/
+/*--------------------------------FIN BLOCK ETOILES*/
+
+/*--------------------------------------------------------FORME RECHERCHE*/
+.block_recherche {
+    font-size: 2vh;
+    width: 100%;
+    margin: 10px 0 10px 0;
+}
+
+.search {
+    display: flex;
+    align-items: stretch;
+    height: 8vh;
+    font-size: 3vh;
+}
+
+.ico_geo {
+    display: flex;
+    background-color: #F2F2F2;
+    align-items: center;
+    justify-content: space-around;
+    width: 8vh;
+    margin-right: -4px;
+    border-bottom-left-radius: 3vh;
+    border-top-left-radius: 3vh;
+}
+
+.fa-map-marker-alt {
+    color: black;
+}
+
+#in_recherche { /*input pour la recherche de la ville*/
+    color: black;
+    border: 1px solid #F2F2F2;
+    vertical-align: middle;
+    padding: 15px;
+    width: 20%;
+    outline: none;
+    font-family: Raleway;
+    font-size: 2vh;
+}
+
+.b_recherche {
+    background-color: #0065FC;
+    outline: none;
+    border: 1px solid;
+    font-family: Raleway;
+    font-weight: 600;
+    color: white;
+    cursor: pointer;
+    font-size: 2vh;
+}
+
+.ordi {
+    display: inline-block;
+    border-top-right-radius: 3vh;
+    border-bottom-right-radius: 3vh;
+    padding: 0 20px;
+}
+
+.mobil {
+    display: none;
+    padding: 15px 20px 17px;
+    border-radius: 15px;
+    position: relative;
+    right: 10px;
+}
+/*--------------------------------------------------------FIN FORME RECHERCHE*/
+
+/*PARTIE FILTRE--------------------------------------------------------------------------------*/
+#chois_filtre {
+    font-size: 2vh;
+    flex-direction: row;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    margin: 1vh 0;
+    width: 100%;
+}
+
+.mot_filtre {
+    text-align: center;
+    padding-right: 10px;
+    margin-bottom: 10px;
+}
+
+.block_filtre {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    border: 2px solid #F2F2F2;
+    border-radius: 6vh;
+    text-align: center;
+    position: relative;
+    margin: 0 20px 10px 0;
+}
+
+.ico_filtre {
+    display: flex;
+    background-color: #DEEBFF;
+    color: #0065FC;
+    width: 8vh;
+    height: 8vh;
+    align-items: center;
+    justify-content: space-around;
+    border-radius: 6vh;
+    margin: -2px;
+}
+
+.filtres { /*Nom filtres*/
+    margin: 0 30px;
+    font-weight: 700;
+}
+
+.fa-heart, .fa-child, .fa-dog, .fa-money-bill-wave {
+}
+/*FIN PARTIE FILTRE--------------------------------------------------------------------------------*/
 
 /*ICONES*/
 .fa-star {
@@ -317,10 +397,13 @@ b.titre { /*pour les articles*/
     align-items: center;
 }
 
+.ico_info {
+}
+
 .fa-info {
     display: flex;
     color: #0065FC;
-    font-size: 15px;
+    font-size: 3vh;
     padding: 10px 15px;
     margin-right: 5px;
     border: 1px solid #F2F2F2;
@@ -333,47 +416,21 @@ b.titre { /*pour les articles*/
     color: black;
 }
 
-.fa-map-marker-alt {
-    display: flex;
-    background-color: #F2F2F2;
-    color: black;
-    padding: 16px 20px 18px;
-    margin-right: -4px;
-    border-bottom-left-radius: 15px;
-    border-top-left-radius: 15px;
-}
-
-.fa-heart, .fa-child, .fa-dog, .fa-money-bill-wave {
-    background-color: #DEEBFF;
-    color: #0065FC;
-    padding: 13px;
-    border-radius: 50%;
-    position: relative;
-    right: 6px;
-    font-size: 15px;
-}
-/*FIN FILTRE*/
 
 
-#chois_filtre { /*Chois de la filtre*/
-    font-size: 16px;
-    display: inline-block;
-    margin: 25px 0;
-    width: 100%;
+.fa, .fab, .fad, .fal, .far, .fas {
+    -moz-osx-font-smoothing: grayscale;
+    -webkit-font-smoothing: antialiased;
+    /* display: inline-block; */
+    font-style: normal;
+    font-variant: normal;
+    text-rendering: auto;
 }
 
-.mot_filtre {
-    text-align: center;
-    padding-right: 10px;
-}
 
-.filtres { /*Disigne pour chaque filtre*/
-    border: 2px solid #F2F2F2;
-    border-radius: 25px 25px;
-    text-align: center;
-    padding: 10px 15px 10px 5px;
-    margin-left: 10px;
-}
+
+
+
 
 #hebergement {
     display: flex;
@@ -620,5 +677,4 @@ ol {
     .propos, .nos_hebergement, .assistance {
         flex-basis: 25%;
     }
-
 }

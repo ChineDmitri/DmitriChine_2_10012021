@@ -14,12 +14,12 @@
     <div class="corps">
         <!--Debut de navigation avec logo Reservia (TOUT EN HEADER)-->
         <header>
-            <nav>
-                <a href="#"><img src="images/logo/Reservia.svg" id="logo" /></a>
-                <ul>
-                    <li><a href="#" id="inscription">S'inscrire</a></li>
-                    <li><a href="#activite" id="activite_link">Activités</a></li>
-                    <li><a href="./index.html#" id="selected">Hébergements</a></li>
+            <nav class="navigation">
+                <a href="#"><img src="images/logo/Reservia.svg" class="logo" /></a>
+                <ul class="listing">
+                    <li class="point_list"><a href="#" CLASS="point_list inscription">S'inscrire</a></li">
+                    <li class="point_list"><a href="#activite" class="point_list activite_link">Activités</a></li>
+                    <li class="point_list"><a href="./index.html#" class="point_list selected">Hébergements</a></li>
                 </ul>
             </nav>
         </header>
@@ -30,33 +30,55 @@
                 Trouvez votre hébergement pour des vacances rêve
             </h1>
             <span class="sousheader">En plaine centre ville ou plein nature</span>
-            <aside class="sousheader">
+            <aside class="block_recherche">
                 <form class="search" method="post" action="searche.php">
-                    <i class="fas fa-map-marker-alt"></i>
-                    <input id="in_recherche" type="text" name="ville_search" placeholder="Écrivez ville souhaitée" /><button class="b_recherche ordi">Rechercher</button><button class="b_recherche mobil"><i class="fas fa-search"></i></button>
+                    <div class="ico_geo">
+                        <i class="fas fa-map-marker-alt"></i>
+                    </div>
+                    <input id="in_recherche" type="text" name="ville_search" placeholder="Écrivez ville souhaitée" />
+                    <button class="b_recherche ordi">Rechercher</button>
+                    <button class="b_recherche mobil"><i class="fas fa-search"></i></button>
                 </form>
             </aside>
-            <div class="sousheader">
+            
                 <aside id="chois_filtre">
                     <span class="mot_filtre"><b>Filtre</b></span>
-                    <span class="filtres">
-                        <i class="fas fa-money-bill-wave"></i>
-                        Économique
-                    </span>
-                    <span class="filtres">
-                        <i class="fas fa-child"></i>
-                        Familial
-                    </span>
-                    <span class="filtres">
-                        <i class="fas fa-heart"></i>
-                        Romantique
-                    </span>
-                    <span class="filtres">
-                        <i class="fas fa-dog"></i>
-                        Animaux autorisés
-                    </span>
+                    <div class="block_filtre">
+                        <div class="ico_filtre">
+                            <i class="fas fa-money-bill-wave"></i>
+                        </div>
+                        <span class="filtres">
+                            Économique
+                        </span>
+                    </div>
+                    <div class="block_filtre">
+                        <div class="ico_filtre">
+                            <i class="fas fa-child"></i>
+                        </div>
+                        <span class="filtres">
+                            Familial
+                        </span>
+                    </div>
+                    <div class="block_filtre">
+                        <div class="ico_filtre">
+                            <i class="fas fa-heart"></i>
+                        </div>
+                        <span class="filtres">
+
+                            Romantique
+                        </span>
+                    </div>
+                    <div class="block_filtre">
+                        <div class="ico_filtre">
+                            <i class="fas fa-dog"></i>
+                        </div>
+                        <span class="filtres">
+
+                            Animaux autorisés
+                        </span>
+                    </div>
                 </aside>
-            </div>
+    
             <div class="sousheader count">
                 <i class="fas fa-info"></i>
                 O Plus de 500 logement sont disponible dans cette ville
