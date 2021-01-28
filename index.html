@@ -12,24 +12,37 @@
 </head>
 <body>
     <div class="corps">
-        <!--Debut de navigation avec logo Reservia (TOUT EN HEADER)-->
+
+        <!--DEBUT de navigation avec logo Reservia (TOUT EN HEADER)-->
         <header>
             <nav class="navigation">
                 <a href="#"><img src="images/logo/Reservia.svg" class="logo" /></a>
-                <ul class="listing">
-                    <li class="point_list"><a href="#" CLASS="point_list inscription">S'inscrire</a></li">
-                    <li class="point_list"><a href="#activite" class="point_list activite_link">Activités</a></li>
-                    <li class="point_list"><a href="./index.html#" class="point_list selected">Hébergements</a></li>
-                </ul>
+                <!--<ul class="listing">-->
+                <!--<div class="bar_nav">-->
+                <div class="menu_inscr">
+                    <!--<li class="point_list">--><a href="#" class="link_inscr">S'inscrire</a><!--</li>-->
+                </div>
+                <div class="menu_bas">
+                    <div class="menu_act">
+                        <!--<li class="point_list">--><a href="#activite" class="link_act">Activités</a><!--</li>-->
+                    </div>
+                    <div class="menu_heb">
+                        <!--<li class="point_list">--><a href="./index.html#" class="link_heb">Hébergements</a><!--</li>-->
+                    </div>
+                </div>
+                <!--</div>-->
+                <!--</ul>-->
             </nav>
         </header>
-        <!--Fin de navigation avec logo Reservia-->
-        <!--Partie avec filtre et recherche-->
+        <!--FIN de navigation avec logo Reservia (TOUT EN HEADER)-->
+        <!--DEBUT partie avec filtre et recherche-->
         <section class="sousheader">
-            <h1 class="titre">
+            <h1 class="sousheader_titre n1">
                 Trouvez votre hébergement pour des vacances rêve
             </h1>
-            <span class="sousheader">En plaine centre ville ou plein nature</span>
+            <span class="sousheader_titre n2">
+                En plaine centre ville ou plein nature
+            </span>
             <aside class="block_recherche">
                 <form class="search" method="post" action="searche.php">
                     <div class="ico_geo">
@@ -40,51 +53,64 @@
                     <button class="b_recherche mobil"><i class="fas fa-search"></i></button>
                 </form>
             </aside>
-            
-                <aside id="chois_filtre">
-                    <span class="mot_filtre"><b>Filtre</b></span>
-                    <div class="block_filtre">
+
+            <aside id="chois_filtre">
+                <span class="mot_filtre"><b>Filtre</b></span>
+
+                <div class="block_filtre">
+                    <a href="#" class="link_filtre">
                         <div class="ico_filtre">
                             <i class="fas fa-money-bill-wave"></i>
                         </div>
                         <span class="filtres">
                             Économique
                         </span>
-                    </div>
-                    <div class="block_filtre">
+                    </a>
+                </div>
+
+                <div class="block_filtre">
+                    <a href="#" class="link_filtre">
                         <div class="ico_filtre">
                             <i class="fas fa-child"></i>
                         </div>
                         <span class="filtres">
                             Familial
                         </span>
-                    </div>
-                    <div class="block_filtre">
+                    </a>
+                </div>
+
+                <div class="block_filtre">
+                    <a href="#" class="link_filtre">
                         <div class="ico_filtre">
                             <i class="fas fa-heart"></i>
                         </div>
                         <span class="filtres">
-
                             Romantique
                         </span>
-                    </div>
-                    <div class="block_filtre">
+                    </a>
+                </div>
+
+                <div class="block_filtre">
+                    <a href="#" class="link_filtre">
                         <div class="ico_filtre">
                             <i class="fas fa-dog"></i>
                         </div>
                         <span class="filtres">
-
                             Animaux autorisés
                         </span>
-                    </div>
-                </aside>
-    
-            <div class="sousheader count">
-                <i class="fas fa-info"></i>
+                    </a>
+                </div>
+
+            </aside>
+
+            <div class="sousheader_titre n3">
+                <div class="ico_info">
+                    <i class="fas fa-info"></i>
+                </div>
                 O Plus de 500 logement sont disponible dans cette ville
             </div>
         </section>
-        <!--Partie avec filtre et recherche-->
+        <!--FIN partie avec filtre et recherche-->
         <!--hebergement gauche ville - droit populaires-->
         <div id="hebergement">
             <!--Ville-->
@@ -282,44 +308,56 @@
                 <div class="range1">
                     <article class="act1">
                         <a class="act_block_link" href="#">
-                            <img class="actimg_grande" src="./images/activites/4_small/reno-laithienne-QUgJhdY5Fyk-unsplash.jpg" />
-                            <div class="discription article_act"><b class="titre">Vieux Port</b></div>
+                            <div class="fleximage">
+                                <img class="actimg_grande" src="./images/activites/4_small/reno-laithienne-QUgJhdY5Fyk-unsplash.jpg" />
+                            </div>
+                            <div class="discription article_act"><b class="tactnom">Vieux Port</b></div>
                         </a>
                     </article>
                 </div>
                 <div class="range2">
                     <article class="act2">
                         <a class="act_block_link" href="#">
-                            <img class="actimg_plusquemoyen" src="./images/activites/4_small/paul-hermann-QFTrLdQIRhI-unsplash.jpg" />
-                            <div class="discription article_act"><b class="titre">Forte Pomègues</b></div>
+                            <div class="fleximage">
+                                <img class="actimg_plusquemoyen" src="./images/activites/4_small/paul-hermann-QFTrLdQIRhI-unsplash.jpg" />
+                            </div>
+                            <div class="discription article_act"><b class="tactnom">Forte Pomègues</b></div>
                         </a>
                     </article>
                     <article class="act3">
                         <a class="act_block_link" href="#">
-                            <img class="actimg_petit" src="./images/activites/4_small/kevin-hikari-rV_Qd1l-VXg-unsplash.jpg" />
-                            <div class="discription article_act"><b class="titre">Îles du Frioul</b></div>
+                            <div class="fleximage">
+                                <img class="actimg_petit" src="./images/activites/4_small/kevin-hikari-rV_Qd1l-VXg-unsplash.jpg" />
+                            </div>
+                            <div class="discription article_act"><b class="tactnom">Îles du Frioul</b></div>
                         </a>
                     </article>
                 </div>
                 <div class="range3">
                     <article class="act4">
                         <a class="act_block_link" href="#">
-                            <img class="actimg_grande" src="./images/activites/4_small/kilyan-sockalingum-NR8-cBCN3aI-unsplash.jpg" />
-                            <div class="discription article_act"><b class="titre">Parc National des Clanques</b></div>
+                            <div class="fleximage">
+                                <img class="actimg_grande" src="./images/activites/4_small/kilyan-sockalingum-NR8-cBCN3aI-unsplash.jpg" />
+                            </div>
+                            <div class="discription article_act"><b class="tactnom">Parc National des Clanques</b></div>
                         </a>
                     </article>
                 </div>
                 <div class="range4">
                     <article class="act5">
                         <a class="act_block_link" href="#">
-                            <img class="actimg_moyen" src="./images/activites/4_small/florian-wehde-xW9e8gdotxI-unsplash.jpg" />
-                            <div class="discription article_act"><b class="titre">Notre-Dame-de-la-Garde</b></div>
+                            <div class="fleximage">
+                                <img class="actimg_moyen" src="./images/activites/4_small/florian-wehde-xW9e8gdotxI-unsplash.jpg" />
+                            </div>
+                            <div class="discription article_act"><b class="tactnom">Notre-Dame-de-la-Garde</b></div>
                         </a>
                     </article>
                     <article class="act6">
                         <a class="act_block_link" href="#">
-                            <img class="actimg_moyen" src="./images/activites/4_small/lena-paulin-wH2-EJoDcV0-unsplash.jpg" />
-                            <div class="discription article_act"><b class="titre">Parc Longchamp</b></div>
+                            <div class="fleximage">
+                                <img class="actimg_moyen" src="./images/activites/4_small/lena-paulin-wH2-EJoDcV0-unsplash.jpg" />
+                            </div>
+                            <div class="discription article_act"><b class="tactnom">Parc Longchamp</b></div>
                         </a>
                     </article>
                 </div>
