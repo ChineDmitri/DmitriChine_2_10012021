@@ -11,8 +11,10 @@ body {
 }
 
 div.corps {
-    margin: 0 5vh;
-    display: block;
+    /*margin: 0 5vh;
+    display: block;*/
+    margin: 0 auto;
+    max-width: 1850px;
 }
 
 a {
@@ -22,8 +24,11 @@ a {
 
 /*---------- HEADER ---------*/
 header {
-    font-size: 3vh;
+    /*font-size: 2vh;
     display: flex;
+    margin: 0 5vh;*/
+    margin: 0 auto;
+    max-width: 1850px;
 }
 
 .navigation {
@@ -109,20 +114,20 @@ header {
 }
 
 .n1 {
-    font-size: 4vh;
+    font-size: 3vh;
     font-weight: 700;
 }
 
 .n2 {
-    font-size: 2.5vh;
+    font-size: 2vh;
     font-weight: 500;
 }
 
 .n3 {
-    font-size: 2.5vh;
+    font-size: 2vh;
     font-weight: 500;
     align-items: center;
-    margin: 0 0 2vh 0;
+    margin: 0 0 1vh 0;
 }
 
 .ico_info {
@@ -177,10 +182,10 @@ header {
     border: 1px solid #F2F2F2;
     vertical-align: middle;
     padding: 2vh;
-    width: 20%;
+    width: 30%;
     outline: none;
     font-family: Raleway;
-    font-size: 3vh;
+    font-size: 2vh;
 }
 
 .b_recherche {
@@ -212,12 +217,12 @@ header {
 
 /*PARTIE FILTRE--------------------------------------------------------------------------------*/
 #chois_filtre {
-    font-size: 2.5vh;
+    font-size: 2vh;
     flex-direction: row;
     display: flex;
     flex-wrap: wrap;
     align-items: center;
-    margin: 2vh 0;
+    margin: 2vh 0 0 0;
     width: 100%;
 }
 
@@ -236,7 +241,7 @@ header {
     border-radius: 6vh;
     text-align: center;
     position: relative;
-    margin: 0 3vh 2vh 0;
+    margin: 0 2vh 2vh 0;
     -webkit-transition: 1s ease; /* Safari and Chrome */
     -moz-transition: 1s ease; /* Firefox 4 */
     -o-transition: 1s ease; /* Opera */
@@ -288,8 +293,8 @@ h2.titre { /*pour le titre de section hebergement plus populaire activité*/
 b.titre { /*pour les articles*/
     display: block;
     flex-wrap: wrap;
-    font-size: 2.5vh;
     font-weight: 700;
+    font-size: 1.8vh;
     margin: 0 0 0.5vh 0;
 }
 
@@ -309,7 +314,8 @@ b.titre { /*pour les articles*/
 
 .aplus {
     order: 2;
-    padding-top: 2%;
+    font-size: 2vh;
+    /*padding-top: 2%;*/
 }
 
 /*hebergement*/
@@ -331,14 +337,13 @@ b.titre { /*pour les articles*/
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
-    flex-direction: row;
-    height: 35vh;*/
+    flex-direction: row;*/
+    /*height: 30vh;*/
     order: 1;
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
     flex-direction: row;
-    /* height: 35vh; */
     margin-bottom: 2vh;
 }
 
@@ -376,7 +381,7 @@ b.titre { /*pour les articles*/
     display: flex;
     flex-wrap: wrap;
     flex-direction: column;
-    font-size: 2.5vh;
+    font-size: 1.8vh;
     justify-content: space-between;
 }
 
@@ -446,7 +451,6 @@ b.titre { /*pour les articles*/
     height: 50px;
     max-height: 27%;
     border-radius: 15px;
-    padding: 0.7vh;
 }
 
     .pop1:hover, .pop2:hover, .pop3:hover {
@@ -458,11 +462,18 @@ b.titre { /*pour les articles*/
     border-bottom-left-radius: 12px;
     object-fit: cover;
     height: 100%;
-    width: 40%;
+    width: 100%;
 }
 
 .article_pop {
     margin: 10px 0 10px 10px;
+}
+
+.pop_img_block {
+    display: flex;
+    max-width: 40%;
+    max-height: 20vh;
+    padding: 0.7vh;
 }
 
 .pop1 {
@@ -514,9 +525,9 @@ b.titre { /*pour les articles*/
 .tactnom {
     display: flex;
     flex-wrap: wrap;
-    font-size: 2.5vh;
+    font-size: 1.8vh;
     font-weight: 700;
-    margin: 0 1.5vh 1.5vh 1.5vh;
+    margin: 0 0.5vh 1.5vh 0.5vh;
 }
 
 .total_act {
@@ -525,11 +536,19 @@ b.titre { /*pour les articles*/
     justify-content: space-between;
 }
 
+.btab1, .btab2 {
+    display: flex;
+    flex-basis: 48%;
+    justify-content: space-between;
+}
+
+
 .range1, .range2, .range3, .range4 {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    flex-basis: 23%;
+    /*flex-basis: 23%;*/
+    flex-basis: 46%;
     border-radius: 20px;
 }
 
@@ -707,7 +726,9 @@ div.about {
     display: flex;
     justify-content: space-between;
     text-decoration: none;
-    margin: 0 5vh;
+    /*margin: 0 5vh;*/
+    margin: 0 auto;
+    max-width: 1850px;
 }
 
 .propos, .nos_hebergement, .assistance {
@@ -718,9 +739,10 @@ div.about {
 }
 
 footer {
+    margin-top: 10vh;
     display: block;
     background-color: #F2F2F2;
-    font-size: 2.2vh;
+    font-size: 1.8vh;
 }
 
 
@@ -739,19 +761,356 @@ ol {
 /*-----------------------------------------*/
 /*-----------------DEBUT MEDIA-------------*/
 /*-----------------------------------------*/
-@media screen and (min-width: 1380px) {
+@media screen and (max-width: 1920px) {
 
     div.corps {
-        margin: 0 auto;
-        max-width: 1380px;
+        /*margin: 0 auto;
+        max-width: 1850px;*/
+        margin: 0 5vh;
+        display: block;
+    }
+
+    header {
+        /*margin: 0 auto;
+        max-width: 1850px;*/
+        font-size: 2vh;
+        display: flex;
+        margin: 0 5vh;
     }
 
     div.about {
-        margin: 0 auto;
-        max-width: 1380px;
+        margin: 0 5vh;
+        /*margin: 0 auto;
+        max-width: 1850px;*/
     }
 
     .propos, .nos_hebergement, .assistance {
         flex-basis: 25%;
     }
 }
+
+@media screen and (max-width: 1345px) /*(max-width: 1346px) and (min-width: 1025px)*/ {
+    #hebergement {
+        flex-direction: column;
+    }
+
+    #ville {
+        order: 2;
+        margin: 0;
+    }
+
+    .total_heb {
+        flex-direction: row;
+        flex-wrap: nowrap;
+        width: 100%;
+    }
+
+    .btot {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+    }
+
+    #populaires {
+        order: 1;
+        margin: 1.5vh 0;
+    }
+
+    .total_pop {
+        flex-direction: row;
+    }
+
+    .pop1, .pop2, .pop3 {
+        height: 20vh;
+        width: 20%;
+    }
+
+    .pop1, .pop2 {
+        margin-bottom: 1vh;
+        margin-right: 3vh;
+    }
+
+    .pop_img_block {
+        width: 30vh;
+    }
+
+    .pop_block_link {
+        width: 100%
+    }
+
+    .total_act {
+        flex-direction: row;
+    }
+
+    .btab1, .btab2 {
+        flex-direction: column;
+    }
+
+    .actimg_grande {
+        width: 100%;
+        height: 20vh;
+    }
+
+    .actimg_moyen, .actimg_petit, .actimg_plusquemoyen {
+        width: 100%;
+        height: 20vh;
+        object-fit: cover;
+    }
+
+    .range1, .range2, .range3, .range4 {
+        flex-direction: row;
+    }
+
+    .range1, .range4 {
+        margin-top: 5vh;
+    }
+
+    .range1 {
+        order: 3;
+    }
+
+
+    .act1, .act4 {
+        width: 100%;
+    }
+
+    .act6, .act5, .act2, .act3 {
+        width: 46%;
+        flex: none;
+    }
+}
+
+@media screen and (max-width: 1024px) /*(max-width: 1024px) and (min-width: 767px)*/ {
+
+    div.corps {
+        margin: 0 2vh;
+    }
+
+    #hebergement {
+        flex-direction: column;
+    }
+
+    /*.total_heb {
+        flex-direction: row;
+        flex-wrap: nowrap;
+        width: 100%;
+    }
+
+    .btot {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+    }*/
+
+    .total_heb {
+        flex-direction: column;
+        flex-wrap: nowrap;
+        width: 48%;
+    }
+
+    .btot {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+    }
+
+    #ville {
+        order: 2;
+        margin: 0;
+    }
+
+    .heb { /*letter-spacing (l'étoiles)*/
+        margin: 0;
+    }
+
+    .hebimg {
+        width: 100%;
+        height: 20vh;
+        object-fit: cover;
+        border-top-left-radius: 12px;
+        border-top-right-radius: 12px;
+    }
+
+    #populaires {
+        order: 1;
+        margin: 1.5vh 0;
+    }
+
+    .total_pop {
+        flex-direction: column;
+    }
+
+    .pop1, .pop2, .pop3 {
+        height: 20vh;
+        max-height: 27%;
+        width: 100%;
+    }
+
+    .pop1, .pop2 {
+        margin-bottom: 2vh;
+    }
+
+    .pop_img_block {
+        width: 30%;
+        max-width: 100%;
+        max-height: 20vh;
+    }
+
+    .total_act {
+        flex-direction: row;
+    }
+
+    .btab1, .btab2 {
+        flex-direction: column;
+    }
+
+    .actimg_grande {
+        width: 100%;
+        height: 20vh;
+    }
+
+    .actimg_moyen, .actimg_petit, .actimg_plusquemoyen {
+        width: 100%;
+        height: 20vh;
+        object-fit: cover;
+    }
+
+    .range1, .range2, .range3, .range4 {
+        flex-direction: column;
+    }
+
+    .range1, .range4, .act3, .act6 {
+        margin-top: 3vh;
+    }
+
+    .range1 {
+        order: 3;
+    }
+
+    .act1, .act4 {
+        width: 100%;
+    }
+
+    .act6, .act5, .act2, .act3 {
+        width: 100%;
+        flex: none;
+    }
+
+    .article_act {
+        padding: 1vh 2vh;
+    }
+}
+
+@media screen and (max-width: 765px) /*(max-width: 766px) and (min-device-width: 100px)*/ {
+    div.corps {
+        margin: 0 2vh;
+    }
+
+    #hebergement {
+        flex-direction: column;
+    }
+
+    #ville {
+        order: 2;
+        margin: 0;
+    }
+
+    /*.total_heb {
+        flex-direction: row;
+        flex-wrap: nowrap;
+        width: 100%;
+    }
+
+    .btot {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+    }*/
+
+    .total_heb {
+        flex-direction: column;
+        flex-wrap: nowrap;
+        width: 48%;
+    }
+
+    .btot {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+    }
+
+    .heb {
+        margin: 0;
+    }
+
+    #populaires {
+        order: 1;
+        margin: 1.5vh 0;
+    }
+
+    .pop1, .pop2, .pop3 {
+        height: 15vh;
+        max-height: 27%;
+    }
+
+    .pop1, .pop2 {
+        margin-bottom: 2vh;
+    }
+
+    .pop_img_block {
+        width: 20vh;
+        max-width: 100%;
+        max-height: 15vh;
+    }
+
+    .total_act {
+        flex-direction: row;
+    }
+
+    .btab1, .btab2 {
+        flex-direction: column;
+    }
+
+    .actimg_grande {
+        width: 100%;
+        height: 20vh;
+    }
+
+    .actimg_moyen, .actimg_petit, .actimg_plusquemoyen {
+        width: 100%;
+        height: 20vh;
+        object-fit: cover;
+    }
+
+    .range1, .range2, .range3, .range4 {
+        flex-direction: column;
+    }
+
+    .range1, .range4, .act3, .act6 {
+        margin-top: 3vh;
+    }
+
+    .range1 {
+        order: 3;
+    }
+
+    .act1, .act4 {
+        width: 100%;
+    }
+
+    .act6, .act5, .act2, .act3 {
+        width: 100%;
+        flex: none;
+    }
+
+    .article_act {
+        padding: 1vh 2vh;
+    }
+}
+
+
+
+
+
+
+
