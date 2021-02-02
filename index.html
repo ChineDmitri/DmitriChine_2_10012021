@@ -4,10 +4,11 @@
 <head>
     <meta charset="utf-8" />
     <link rel="stylesheet" href="style/style.css" />
-    <!--Regular 400 et Bold 700-->
     <script src="https://kit.fontawesome.com/f758d5de88.js" crossorigin="anonymous"></script>
     <link rel="preconnect" href="https://fonts.gstatic.com">
+    <!--Regular 500, 600 et Bold 700-->
     <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@500;600;700&display=swap" rel="stylesheet">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Réservia</title>
 </head>
 <body>
@@ -15,27 +16,23 @@
     <header>
         <nav class="navigation">
             <a href="#"><img src="images/logo/Reservia.svg" class="logo" /></a>
-            <!--<ul class="listing">-->
-            <!--<div class="bar_nav">-->
+
             <div class="menu_inscr">
-                <!--<li class="point_list">--><a href="#" class="link_inscr">S'inscrire</a><!--</li>-->
+                <a href="#" class="link_inscr">S'inscrire</a>
             </div>
             <div class="menu_bas">
                 <div class="menu_act">
-                    <!--<li class="point_list">--><a href="#activite" class="link_act">Activités</a><!--</li>-->
+                    <a href="#activite" class="link_act">Activités</a>
                 </div>
                 <div class="menu_heb">
-                    <!--<li class="point_list">--><a href="./index.html#" class="link_heb">Hébergements</a><!--</li>-->
+                    <a href="./index.html#" class="link_heb">Hébergements</a>
                 </div>
             </div>
-            <!--</div>-->
-            <!--</ul>-->
         </nav>
     </header>
     <!--FIN de navigation avec logo Reservia (TOUT EN HEADER)-->
+
     <div class="corps">
-
-
         <!--DEBUT partie avec filtre et recherche-->
         <section class="sousheader">
             <h1 class="sousheader_titre n1">
@@ -55,6 +52,7 @@
                 </form>
             </aside>
 
+            <!--FILTRES debut-->
             <aside id="chois_filtre">
                 <span class="mot_filtre"><b>Filtre</b></span>
 
@@ -103,6 +101,7 @@
                 </div>
 
             </aside>
+            <!--FILTRES fin-->
 
             <div class="sousheader_titre n3">
                 <div class="ico_info">
@@ -112,18 +111,17 @@
             </div>
         </section>
         <!--FIN partie avec filtre et recherche-->
-        <!--hebergement gauche ville - droit populaires-->
+
+        <!--DEBUT HEBERGEMENT / gauche ville - droit populaires-->
         <div id="hebergement">
             <!--Ville-->
             <section id="ville">
                 <h2 class="titre local">Hébergements à Marseille</h2>
                 <div class="btot">
                     <div class="total_heb">
-
-
                         <article class="heb1">
                             <a class="heb_block_link" href="#">
-                                <!--1ème hebergement-->
+                                <!--1er hebergement-->
                                 <img class="hebimg" src="./images/hebergements/4_small/marcus-loke-WQJvWU_HZFo-unsplash.jpg" />
                                 <div class="discription article_heb">
                                     <div class="top_pop_discription">
@@ -142,53 +140,30 @@
                                 </div>
                             </a>
                         </article>
-
-
                         <article class="heb2">
                             <a class="heb_block_link" href="#">
                                 <!--2ème hebergement-->
                                 <img class="hebimg" src="./images/hebergements/4_small/fred-kleber-gTbaxaVLvsg-unsplash.jpg" />
-
-                                <div class="discription article_heb">
-                                    <!--<div class="top_pop_discription">-->
+                                <div class="discription article_heb"> 
                                     <b class="titre appnom">Hôtel du port</b>
-                                    <!--<div class="bot_pop_discription">-->
                                     <span class="prix">Nuit a partire 52€</span>
-                                    <!--</div>-->
-
                                     <div class="stars heb">
                                         <i class="fas fa-star"></i>
                                         <i class="fas fa-star"> </i>
                                         <i class="fas fa-star"></i>
                                         <i class="fas fa-star"></i>
                                         <i class="fas fa-star"></i>
-                                    </div>
-                                    <!--</div>-->
+                                    </div> 
                                 </div>
                             </a>
                         </article>
-
                         <article class="heb3">
                             <a class="heb_block_link" href="#">
                                 <!--3ème hebergement-->
                                 <img class="hebimg" src="./images/hebergements/4_small/reisetopia-B8WIgxA_PFU-unsplash.jpg" />
-                                <!--<div class="discription article_heb">
-                    <b class="titre appnom">Hôtel Les mouettes</b>
-                    <span class="prix">Nuit a partire de 76€</span>
-                    <div class="stars heb">
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"> </i>
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star no_color"></i>
-                    </div>
-                </div>-->
                                 <div class="discription article_heb">
-
                                     <b class="titre appnom">Hôtel Les mouettes</b>
                                     <span class="prix">Nuit a partire 76€</span>
-
-
                                     <div class="stars heb">
                                         <i class="fas fa-star"></i>
                                         <i class="fas fa-star"> </i>
@@ -196,7 +171,6 @@
                                         <i class="fas fa-star"></i>
                                         <i class="fas fa-star"></i>
                                     </div>
-
                                 </div>
                             </a>
                         </article>
@@ -261,7 +235,7 @@
             <section id="populaires">
                 <h2 class="titre">Les plus populaires<i class="fas fa-chart-line"></i></h2>
                 <div class="total_pop">
-
+                    <!--1 plus populaire-->
                     <article class="pop1">
                         <a class="pop_block_link" href="#">
                             <div class="pop_img_block">
@@ -284,7 +258,7 @@
                             </div>
                         </a>
                     </article>
-
+                    <!--2 plus populaire-->
                     <article class="pop2">
                         <a class="pop_block_link" href="#">
                             <div class="pop_img_block">
@@ -307,6 +281,7 @@
                             </div>
                         </a>
                     </article>
+                    <!--3 plus populaire-->
                     <article class="pop3">
                         <a class="pop_block_link" href="#">
                             <div class="pop_img_block">
@@ -332,11 +307,11 @@
                 </div>
             </section>
         </div>
-
         <!--activite au ville -->
         <section id="activite">
             <h2 class="titre">Acivité à Marseille</h2>
             <div class="total_act">
+                <!--premier block-->
                 <div class="btab1">
                     <div class="range1">
                         <article class="act1">
@@ -367,6 +342,7 @@
                         </article>
                     </div>
                 </div>
+                <!--2eme block-->
                 <div class="btab2">
                     <div class="range3">
                         <article class="act4">
@@ -400,10 +376,8 @@
             </div>
         </section>
     </div>
-
     <footer>
         <div class="about">
-
             <div class="propos">
                 <!--block avec A propos-->
                 <b class="ftitre">A propos</b>
@@ -413,7 +387,6 @@
                     <li><a href="#">Donnée et confidentialité</a></li>
                 </ol>
             </div>
-
             <div class="nos_hebergement">
                 <!--block avec Nos hébergement-->
                 <b class="ftitre">Nos hébergement</b>
@@ -422,7 +395,6 @@
                     <li><a href="#">Soumettre votre hôtel</a></li>
                 </ol>
             </div>
-
             <div class="assistance">
                 <!--block avec Assistance-->
                 <b class="ftitre">Assistance</b>
@@ -431,7 +403,6 @@
                     <li><a href="#">Nous contacter</a></li>
                 </ol>
             </div>
-
         </div>
     </footer>
 </body>
