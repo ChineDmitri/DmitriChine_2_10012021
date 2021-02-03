@@ -95,7 +95,6 @@ header {
         color: #0065FC;
         display: flex;
         text-decoration: none;
-        background-color: white;
     }
 
 .link_act:hover {
@@ -308,6 +307,9 @@ b.titre { /*pour les articles*/
 
 .appnom {
     order: 0;
+    margin: 0 0 0.5vh 0;
+    font-weight: 700;
+    font-size: 1.8vh;
 }
 
 .local {
@@ -1309,7 +1311,6 @@ ol {
             text-decoration: none;
             text-align: center;
             justify-content: center;
-            background-color: white;
         }
 
     .menu_inscr:hover {
@@ -1321,9 +1322,8 @@ ol {
         text-decoration: none;
         flex-grow: 1;
         align-items: flex-end;
-        justify-content:flex-end;
+        justify-content: flex-end;
         text-align: end;
-        background-color: white;
     }
     /*FIN MENU*/
     .sousheader {
